@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-.mobile {
-    display: none;
-}
-
 /********** DESKTOP **********/
 
 .desktop {
@@ -287,15 +283,4 @@
     font-size: 12px;
     text-align: center;
     margin-top: 1rem;
-}
-
-/***** MEDIA QUERIES *****/
-@media screen and (max-width: 1300px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
 }
