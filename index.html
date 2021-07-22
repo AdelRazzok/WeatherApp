@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Ma Super Météo</title>
+    <title>My Weather App</title>
 </head>
 
 <body>
     <div class="desktop">
         <header class="main_header">
             <div class="cloud"></div>
-            <h1 class="main_title">Ma Super Météo</h1>
+            <h1 class="main_title">My Weather App</h1>
             <div class="cloud"></div>
         </header>
             
@@ -29,7 +29,6 @@
             <span id='inputTemp'></span>
             <span id='inputWeather'></span>
         </div>
-    
     </div>
         
     <div class="mobile">
@@ -37,7 +36,8 @@
             <i class="bi bi-geo-alt"></i>
         </div>
         <div class="search">
-            <i class="bi bi-search"></i>
+            <input type="text" id="citySelect" class="city_search" placeholder="Entrez une ville...">
+            <button type="button" id="cityBtn" class="city_btn"><i class="bi bi-search"></i></button>
         </div>
 
         <div class="main_block">

@@ -11,6 +11,8 @@
     display: none;
 }
 
+/********** DESKTOP **********/
+
 .desktop {
     height: 100vh;
     background-color: #66D0FF;
@@ -125,18 +127,7 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-/***** MEDIA QUERIES *****/
-@media screen and (max-width: 1300px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-}
-
-/***** MOBILE *****/
+/********** MOBILE **********/
 
 .mobile {
     position: relative;
@@ -148,18 +139,37 @@
 }
 
 /***** HEADER *****/
-
 .geo {
     position: absolute;
-    left: 2rem;
-    top: 2rem;
+    left: 1.5rem;
+    top: 1rem;
     font-size: 1.5rem;
 }
 .search {
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: 1.5rem;
+    top: 1rem;
     font-size: 1.5rem;
+}
+
+.city_search {
+    margin-right: 5px;
+    padding: 5px;
+    border: unset;
+    outline: unset;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.city_search:focus {
+    border: 1px solid black;
+}
+
+.city_btn {
+    padding: 8px 9px;
+    border: unset;
+    border-radius: 50%;
+    font-size: 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 /***** MAIN BLOCK *****/
@@ -212,7 +222,6 @@
 }
 
 /***** DETAILS *****/
-
 .mobile_row {
     margin-top: 2rem;
     display: flex;
@@ -230,7 +239,6 @@
 }
 
 /***** NEXT DAYS *****/
-
 .mobile_footer {
     color: #303030;
     margin-top: 3rem;
@@ -279,4 +287,15 @@
     font-size: 12px;
     text-align: center;
     margin-top: 1rem;
+}
+
+/***** MEDIA QUERIES *****/
+@media screen and (max-width: 1300px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
