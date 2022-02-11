@@ -38,7 +38,7 @@ fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${api
         // Informations principales
         mobileCity.textContent = cityName;
         mobileWeather.textContent = data.list[0].weather[0].description;
-        iconLocation.innerHTML = `<img class="weather_icon_img" src="./assets/icons/${icon}.png"></img>`;
+        iconLocation.innerHTML = `<img class="weather_icon_img" src="./public/icons/${icon}.png"></img>`;
         mobileTemp.textContent = Math.round(data.list[0].main.temp) + '°C';
 
         // Détails
@@ -50,35 +50,35 @@ fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${api
         // Récupération et affichage des 5 prochain jours
         weekDayOne.textContent = todayDay[todayNumber];
         dayOne.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[8].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[8].weather[0].icon}.png">
             <span>${Math.round(data.list[8].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
 
         weekDayTwo.textContent = todayDay[todayNumber];
         dayTwo.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[16].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[16].weather[0].icon}.png">
             <span>${Math.round(data.list[16].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
         
         weekDayThree.textContent = todayDay[todayNumber];
         dayThree.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[24].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[24].weather[0].icon}.png">
             <span>${Math.round(data.list[24].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
         
         weekDayFour.textContent = todayDay[todayNumber];
         dayFour.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[32].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[32].weather[0].icon}.png">
             <span>${Math.round(data.list[32].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
 
         weekDayFive.textContent = todayDay[todayNumber];
         dayFive.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[39].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[39].weather[0].icon}.png">
             <span>${Math.round(data.list[39].main.temp)}°C</span>
         `;
     });
@@ -96,7 +96,7 @@ cityBtn.addEventListener('click', () => {
         // Informations principales
         mobileCity.textContent = cityName;
         mobileWeather.textContent = data.list[0].weather[0].description;
-        iconLocation.innerHTML = `<img class="weather_icon_img" src="./assets/icons/${icon}.png"></img>`;
+        iconLocation.innerHTML = `<img class="weather_icon_img" src="./public/icons/${icon}.png"></img>`;
         mobileTemp.textContent = Math.round(data.list[0].main.temp) + '°C';
 
         // Détails
@@ -108,35 +108,35 @@ cityBtn.addEventListener('click', () => {
         // Récupération et affichage des 5 prochain jours
         weekDayOne.textContent = todayDay[todayNumber];
         dayOne.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[8].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[8].weather[0].icon}.png">
             <span>${Math.round(data.list[8].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
 
         weekDayTwo.textContent = todayDay[todayNumber];
         dayTwo.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[16].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[16].weather[0].icon}.png">
             <span>${Math.round(data.list[16].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
         
         weekDayThree.textContent = todayDay[todayNumber];
         dayThree.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[24].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[24].weather[0].icon}.png">
             <span>${Math.round(data.list[24].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
         
         weekDayFour.textContent = todayDay[todayNumber];
         dayFour.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[32].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[32].weather[0].icon}.png">
             <span>${Math.round(data.list[32].main.temp)}°C</span>
         `;
         todayNumber < 6 ? todayNumber++ : todayNumber = 0;
 
         weekDayFive.textContent = todayDay[todayNumber];
         dayFive.innerHTML = `
-            <img class="next_icon_img" src="./assets/icons/${data.list[39].weather[0].icon}.png">
+            <img class="next_icon_img" src="./public/icons/${data.list[39].weather[0].icon}.png">
             <span>${Math.round(data.list[39].main.temp)}°C</span>
         `;
     });
